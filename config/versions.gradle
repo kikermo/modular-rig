@@ -1,0 +1,15 @@
+ext.versions = [
+        kotlin          : '1.2.21',
+        rxjava          : '2.1.9',
+        kodein          : '5.0-beta4',
+        butterknife     : '8.8.1',
+        supportLibrary  : '26.1.0',
+        junit           : '4.12',
+        things          : '0.6.1-devpreview',
+
+        // Basic Config
+        compileSdk      : 26,
+        minSdk          : 21,
+        targetSdk       : 26,
+        gradleBuildTools: '3.0.1'
+]

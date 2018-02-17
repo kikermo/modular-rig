@@ -1,0 +1,14 @@
+ext.projectDependencies = [
+        gradleBuildTools    : "com.android.tools.build:gradle:$versions.gradleBuildTools",
+        supportAppCompat    : "com.android.support:appcompat-v7:$versions.supportLibrary",
+        supportDesign       : "com.android.support:design:$versions.supportLibrary",
+        junit               : "junit:junit:$versions.junit",
+        kotlin              : "org.jetbrains.kotlin:kotlin-stdlib-jre7:$versions.kotlin",
+        kotlinPlugin        : "org.jetbrains.kotlin:kotlin-gradle-plugin:$versions.kotlin",
+        things              : "com.google.android.things:androidthings:$versions.things",
+        rxjava              : "io.reactivex.rxjava2:rxjava:$versions.rxjava",
+        kodein              : "com.github.salomonbrys.kodein:kodein:$versions.kodein",
+        butterknife         : "com.jakewharton:butterknife:$versions.butterknife",
+        butterknifeProcessor: "com.jakewharton:butterknife-compiler:$versions.butterknife",
+        butterknifePlugin   : "com.jakewharton:butterknife-gradle-plugin::$versions.butterknife"
+]
