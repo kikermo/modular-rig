@@ -8,10 +8,13 @@ buildscript {
     repositories {
         google()
         jcenter()
-    }
+        mavenCentral()
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots" }    }
+
     dependencies {
         classpath projectDependencies.gradleBuildTools
         classpath projectDependencies.kotlinPlugin
+        classpath projectDependencies.butterknifePlugin
     }
 }
 
@@ -19,6 +22,8 @@ allprojects {
     repositories {
         google()
         jcenter()
+        mavenCentral()
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
     }
 }
 

@@ -1,7 +1,17 @@
 package org.kikermo.ui.base
 
-class BasePresenter<VIEW> {
-    @Inject var view: VIEW
+import io.reactivex.disposables.CompositeDisposable
 
-    fun onBindView()
+class BasePresenter<VIEW> {
+    val compositeDisposable: CompositeDisposable = CompositeDisposable()
+    var view: VIEW = null
+
+    fun onBindView(view: VIEW) {
+        this.view = view
+    }
+
+    fun onUnbindView() {
+        compositeDisposable.clear()
+        view = null
+    }
 }

@@ -1,8 +1,9 @@
 ext.versions = [
         kotlin          : '1.2.21',
         rxjava          : '2.1.9',
-        kodein          : '5.0-beta4',
-        butterknife     : '8.8.1',
+        kodein          : '4.1.0',
+//        butterknife     : '8.5.0',
+        butterknife     : '9.0.0-SNAPSHOT',
         supportLibrary  : '26.1.0',
         junit           : '4.12',
         things          : '0.6.1-devpreview',

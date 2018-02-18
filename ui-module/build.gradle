@@ -1,15 +1,23 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.jakewharton.butterknife'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+
 
 android {
     compileSdkVersion versions.compileSdk
 
     defaultConfig {
-        minSdkVersion 21
-        targetSdkVersion 26
+        minSdkVersion versions.minSdk
+        targetSdkVersion versions.targetSdk
         versionCode 1
         versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
     }
 
 }
@@ -17,7 +25,14 @@ android {
 dependencies {
     implementation projectDependencies.supportAppCompat
     implementation projectDependencies.supportDesign
+
     implementation projectDependencies.kotlin
+    implementation projectDependencies.kodein
+    implementation projectDependencies.butterknife
+    implementation projectDependencies.rxjava
+
+    kapt projectDependencies.butterknifeProcessor
+
     testImplementation projectDependencies.junit
 }
 

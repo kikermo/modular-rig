@@ -10,5 +10,5 @@ ext.projectDependencies = [
         kodein              : "com.github.salomonbrys.kodein:kodein:$versions.kodein",
         butterknife         : "com.jakewharton:butterknife:$versions.butterknife",
         butterknifeProcessor: "com.jakewharton:butterknife-compiler:$versions.butterknife",
-        butterknifePlugin   : "com.jakewharton:butterknife-gradle-plugin::$versions.butterknife"
+        butterknifePlugin   : "com.jakewharton:butterknife-gradle-plugin:$versions.butterknife"
 ]
